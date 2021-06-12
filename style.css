@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: pink;
+}
+
+
+/* anchor tag  */
+
+.anchor {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* line between div  */
+
+.mainhr {
+    background: transparent;
+    border: 0;
+    border-top: dotted 5px;
+    width: 10rem;
+    margin: 3rem 45%;
+}
+
+
+/* navigation bar  */
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    margin: rem 3rem;
+    font-family: sans-serif;
+    color: #000000;
+    transition: 4s all ease-in-out;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Truculenta', sans-serif;
+}
+
+.navTable {
+    display: flex;
+    transition: 1s all ease-in-out;
+}
+
+.Items {
+    padding-right: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Items:hover,
+.ItemLast:hover {
+    font-weight: 500;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+
+/* hamburger menu  */
+
+.hamburger {
+    width: 50px;
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    height: 40px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    cursor: pointer;
+}
+
+.hamburgerMenu {
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    position: relative;
+    top: 1rem;
+    left: 0.3rem;
+    transition: .3s all ease-in-out;
+}
+
+.hamburgerMenu::before,
+.hamburgerMenu::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    transition: .3s all ease-in-out;
+}
+
+.hamburgerMenu::before {
+    transform: translate(-20px, 10px);
+}
+
+.hamburgerMenu::after {
+    transform: translate(-20px, -10px);
+}
+
+
+/* first div  */
+
+.main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Images/cake.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.innerContainer1 {
+    position: absolute;
+    width: 25rem;
+    top: 10rem;
+    right: 8rem;
+    background-color: wheat;
+    opacity: 0.8;
+    padding: .5rem 2rem;
+    border-radius: 10%;
+}
+
+.companyName {
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: 'Truculenta', sans-serif;
+}
+
+.innerContainer1 p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    font-family: 'Truculenta', sans-serif;
+    font-weight: bold;
+}
+
+.main2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+/* heading in all divs  */
+
+.secondHeading,
+.thirdHeading,
+.fourthHeading,
+.fifthHeading {
+    font-size: 4rem;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Truculenta', sans-serif;
+    font-weight: 700;
+    margin: 2.5rem auto;
+}
+
+.product,
+.course {
+    width: 250px;
+    padding: 1.5rem;
+    margin: 3rem 3rem;
+    background-color: #ff5e78;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* images of cake in second section  */
+
+.imagesProduct {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.main2 h3 {
+    margin-top: 1rem;
+}
+
+.main3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.tutorial {
+    width: 100vw;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.submit {
+    width: 11rem;
+    height: 3rem;
+    background-color: rgb(226, 152, 165);
+    border: 0;
+    border-radius: 10px;
+}
+
+.imageUser {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+
+/* carasouel division  */
+
+.main4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.innermain4 {
+    display: flex;
+    width: 40vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.carousel-item {
+    background-color: #ff5e78;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.main4 h3 {
+    float: right;
+    font-size: 2.5rem;
+    margin-top: 25px;
+}
+
+.imageDiv {
+    width: 200px;
+}
+
+.hr {
+    margin-top: 6rem;
+}
+
+.carousel-control-prev {
+    margin-left: -6rem;
+    opacity: .7;
+}
+
+.carousel-control-next {
+    margin-right: -6rem;
+}
+
+.main5 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+}
+
+.order {
+    width: 7rem;
+    height: 7rem;
+    border: 0;
+    border-radius: 100%;
+    background-color: rgb(241, 89, 122);
+    margin-top: 1rem;
+}
+
+.order:hover {
+    background-color: #ff577f;
+    transform: scale(.95);
+}
+
+.main6 {
+    background-color: rgb(247, 76, 119);
+    width: 100vw;
+    padding: 3rem 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.headingBottom {
+    font-size: 3rem;
+}
+
+
+/* logos in the footer  */
+
+.insta {
+    transform: scale(1.5);
+}
+
+.logos {
+    width: 25px;
+    height: 25px;
+    margin-left: 1rem;
+}
+
+.logoButton {
+    border: transparent;
+    background: transparent;
+}
+
+.footerTable {
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+
+/* responsive design   */
+
+@media(max-width:600px) {
+    body {
+        text-align: center;
+    }
+    .heading {
+        text-align: left;
+    }
+    .hamburger {
+        display: block;
+    }
+    .navTable {
+        display: none;
+        opacity: 0;
+        transition: .5s all ease-in-out;
+        text-align: left;
+    }
+    .clicked {
+        display: block;
+        opacity: 1;
+    }
+    .hamburger.opened .hamburgerMenu {
+        width: 0;
+        height: 0;
+    }
+    .hamburger.hamburger.opened .hamburgerMenu::before {
+        transform: rotate(45deg) translate(-0px, 0px);
+    }
+    .hamburger.opened .hamburgerMenu::after {
+        transform: rotate(-45deg) translate(-0px, 0px);
+    }
+    .main1,
+    .main2,
+    .main3,
+    .main4,
+    .main5 {
+        padding: 1rem 2rem;
+    }
+    .secondHeading,
+    .thirdHeading,
+    .fourthHeading,
+    .fifthHeading {
+        font-size: 3rem;
+    }
+    .tutorial {
+        font-size: 1.5rem;
+    }
+    .nav {
+        padding: 1rem 2rem;
+    }
+    .innerContainer1 {
+        width: 20rem;
+        opacity: 0.9;
+        position: relative;
+        left: 7%;
+        top: 2rem;
+    }
+    .carousel-control-prev {
+        margin-left: -3rem;
+    }
+    .carousel-control-next {
+        margin-right: -3rem;
+    }
+    .main6 {
+        width: 100%;
+        display: block;
+    }
+    .mainhr {
+        width: 100%;
+        margin: 1rem 0;
+        opacity: 0.1;
+    }
+    /* using a hamburger menu  */
+    .Items,
+    .ItemLast {
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+    }
+    .nav {
+        display: block;
+    }
+    .footerTable {
+        margin-left: 5.5rem;
+        margin: 2rem auto;
+    }
+}
+
+@media(max-width: 400px) {
+    .companyName {
+        font-size: 3rem;
+    }
+    .innerContainer1 p {
+        font-size: 1.2rem;
+    }
+    .innerContainer1 {
+        width: 18rem;
+    }
+    .headingBottom,
+    .footerTable,
+    .btn {
+        width: 250px;
+        position: relative;
+        left: -5rem;
+        text-align: center;
+    }
+    .btn {
+        margin-top: 1rem;
+    }
+    .logoButton {
+        width: 10px;
+        margin-left: -1rem;
+    }
+}

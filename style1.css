@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    text-align: center;
+    line-height: 1.2;
+    background-color: pink;
+    background-image: url("images/pexels-kaboompics-com-6431.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.SignUp {
+    width: 16rem;
+    margin-top: 10rem;
+    background-color: #ff5e78;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    opacity: .7;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.email,
+.password,
+.submit {
+    width: 13rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.password {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.email {
+    margin-top: 2rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.submit {
+    margin-top: 1rem;
+    cursor: pointer;
+}

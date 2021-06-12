@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("images/pexels-daria-shevtsova-1070850.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: pink;
+    line-height: 1.2;
+    height: 100vh;
+}
+
+.aboutUs {
+    padding: 2rem;
+}
+
+.name,
+.intro,
+.staff {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.name1 {
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+}
+
+hr {
+    margin: 2rem auto;
+    border: 0;
+    width: 10rem;
+    border-top: dotted 10px gray;
+}
+
+.data p {
+    margin-right: 2rem;
+}
+
+@media (max-width: 1130px) {
+    body {
+        height: 50rem;
+    }
+}
+
+@media(max-width: 920px) {
+    body {
+        height: 65rem;
+        background-position: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .aboutUs {
+        text-align: center;
+        height: 40rem;
+    }
+    .name1 {
+        font-size: 1.4rem;
+    }
+    .data p {
+        margin-left: 3rem;
+    }
+}
